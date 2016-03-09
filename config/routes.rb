@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'answer', to: 'coach_controller#answer'
+
+  get 'ask', to: 'coach_controller#ask'
+
+  get 'posts', to: 'posts#index'
+
+  root 'coach_controller#ask'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
